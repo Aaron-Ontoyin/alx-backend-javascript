@@ -14,10 +14,10 @@ export class HolbertonClass {
 }
 
 export class StudentHolberton {
-  constructor(firstName, lastName) {
+  constructor(firstName, lastName, hclass) {
     this._firstName = firstName;
     this._lastName = lastName;
-    this._holbertonClass = new HolbertonClass(2019, 'San Francisco');
+    this._holbertonClass = hclass;
   }
 
   get fullName() {
@@ -25,7 +25,7 @@ export class StudentHolberton {
   }
 
   get holbertonClass() {
-    return this.holbertonClass;
+    return this._holbertonClass;
   }
 
   get fullStudentDescription() {
