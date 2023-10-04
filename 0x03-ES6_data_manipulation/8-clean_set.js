@@ -6,7 +6,7 @@ export default function cleanSet(set, startString) {
   const output = [];
   set.forEach((el) => {
     if (el.startsWith(startString)) {
-      output.pushBack(el.slice(startString.length));
+      output.push(el.slice(startString.length));
     }
   });
   return output.join('-');
